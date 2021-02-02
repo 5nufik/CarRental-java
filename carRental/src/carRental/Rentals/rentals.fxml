@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clear" prefHeight="400.0" prefWidth="1330.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRental.Rentals.rentalsController">
+    <children>
+        <Button layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="90.0" text="Назад" textAlignment="CENTER">
+            <font>
+                <Font name="Microsoft Sans Serif" size="14.0" />
+            </font>
+        </Button>
+
+        <TableView fx:id="table" layoutX="120.0" layoutY="15.0" prefHeight="370.0" prefWidth="1195.0">
+            <columns>
+                <TableColumn fx:id="col_contract" prefWidth="140.0" resizable="false" style="-fx-alignment: CENTER;" text="Номер договора" />
+                <TableColumn fx:id="col_fio" prefWidth="270.0" resizable="false" style="-fx-alignment: CENTER;" text="ФИО клиента" />
+                <TableColumn fx:id="col_vin" prefWidth="180.0" resizable="false" style="-fx-alignment: CENTER;" text="VIN номер" />
+                <TableColumn fx:id="col_mark" prefWidth="100.0" resizable="false" style="-fx-alignment: CENTER;" text="Марка" />
+                <TableColumn fx:id="col_model" prefWidth="100.0" resizable="false" style="-fx-alignment: CENTER;" text="Модель" />
+                <TableColumn fx:id="col_rentalDate" prefWidth="130.0" resizable="false" style="-fx-alignment: CENTER;" text="Дата сдачи авто" />
+                <TableColumn fx:id="col_receptionDate" prefWidth="130.0" resizable="false" style="-fx-alignment: CENTER;" text="Дата приёма авто" />
+                <TableColumn fx:id="col_price" prefWidth="130.0" resizable="false" style="-fx-alignment: CENTER;" text="Итоговая цена" />
+            </columns>
+        </TableView>
+
+        <Label fx:id="label" layoutX="0" layoutY="0" />
+    </children>
+</AnchorPane>

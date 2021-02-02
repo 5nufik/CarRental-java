@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#clear" prefHeight="400.0" prefWidth="1135.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carRental.Clients.clientsController">
+   <children>
+      <Button layoutX="15.0" layoutY="15.0" mnemonicParsing="false" onAction="#back" prefHeight="35.0" prefWidth="90.0" text="Назад" textAlignment="CENTER">
+         <font>
+            <Font name="Microsoft Sans Serif" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="120.0" layoutY="15.0" prefHeight="370.0" prefWidth="1000.0">
+        <columns>
+          <TableColumn fx:id="col_fio" prefWidth="270.0" resizable="false" style="-fx-alignment: CENTER;" text="ФИО" />
+          <TableColumn fx:id="col_passport" prefWidth="120.0" resizable="false" style="-fx-alignment: CENTER;" text="Паспорт" />
+            <TableColumn fx:id="col_address" prefWidth="275.0" resizable="false" style="-fx-alignment: CENTER;" text="Адрес" />
+            <TableColumn fx:id="col_driverLicense" prefWidth="180.0" resizable="false" style="-fx-alignment: CENTER;" text="Водительское удостоверение" />
+            <TableColumn fx:id="col_phone" minWidth="0.0" prefWidth="140.0" resizable="false" style="-fx-alignment: CENTER;" text="Телефон" />
+        </columns>
+      </TableView>
+      <Label fx:id="label" layoutX="33.0" layoutY="126.0" />
+   </children>
+</AnchorPane>
